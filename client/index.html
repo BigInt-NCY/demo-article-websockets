@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+	<head>
+		<script src="bower_components/angular/angular.min.js"></script> 
+		<script src="app.js"></script>
+		<script src="bower_components/angular-websocket/angular-websocket.js"></script>
+		<script src="websocket/websocket-wrapper.service.js"></script>
+		<script src="websocket/websocket-state.controller.js"></script>
+		<script src="demo.controller.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body data-ng-controller="DemoCtrl">
+		<div id="main">
+			<div data-ng-controller="WebsocketStateCtrl">
+				<span data-ng-bind="websocket.message"></span>
+				<span class="circle" data-ng-class="{initializing: websocket.state === 'initializing', connected : websocket.state === 'connected', disconnected: websocket.state === 'disconnected', reconnecting: websocket.state === 'reconnecting'}"></span>
+			</div>
+		</div>
+	</body>
+</html>

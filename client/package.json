@@ -1,0 +1,15 @@
+{
+  "name": "demo-article-websockets",
+  "version": "0.1.0",
+  "description": "Websocket (AngularJS) boilerplate",
+  "author": [
+    "Alexandre Nucera <alexandre.nucera@bigint.fr>"
+  ],
+  "devDependencies": {
+    "bower": "^1.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}

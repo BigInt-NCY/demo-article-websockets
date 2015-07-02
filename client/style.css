@@ -1,0 +1,14 @@
+/** Websocket indicator **/
+
+.circle {
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.circle.connected { background-color: #5CB85C; }
+.circle.disconnected { background-color: #BB2A2A; }
+.circle.reconnecting { background-color: #F0AD4E; }
+.circle.initializing { background-color: #BCBCBC; }
